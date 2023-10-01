@@ -7,7 +7,9 @@
 # appropriate location.
 
 install:
-	# Nothing installed
+	@(cp credentials.ini /home/aflores9/project-0/hello/)
+
 
 run:
-	@(cd hello; python3 hello.py)
+	@(cd hello; python3 hello.py; rm credentials.ini)
+
